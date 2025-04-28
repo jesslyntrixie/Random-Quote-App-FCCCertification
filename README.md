@@ -1,19 +1,18 @@
 
-
-# Markdown Previewer
+# Random Quote Machine
 
 This is one of the five projects required to complete the **freeCodeCamp Front End Development Libraries Certification**.
 
-The goal of this project is to build a Markdown editor and previewer that converts user-input Markdown text into rendered HTML in real-time, following the [CommonMark](https://commonmark.org/) specification with support for line breaks.
+The goal of this project is to build a Random Quote Machine that displays random quotes at the click of a button and allows users to share quotes on Twitter.
 
 ---
 
 ## Project Features
 
-- Live preview of Markdown text as you type.
-- Supports headers, links, code blocks, lists, bold, italic, blockquotes, images, and more.
-- Follows CommonMark and GitHub Flavored Markdown standards.
-- Responsive and user-friendly interface.
+- Displays a random quote and its author.
+- Button to generate a new random quote.
+- Twitter button to share the current quote.
+- Smooth and responsive UI.
 - Built using **React** and styled with **Bootstrap** and custom CSS.
 
 ---
@@ -22,8 +21,7 @@ The goal of this project is to build a Markdown editor and previewer that conver
 
 - [React](https://react.dev/)
 - [Bootstrap](https://getbootstrap.com/)
-- [Marked](https://marked.js.org/) (for parsing Markdown)
-- [DOMPurify](https://github.com/cure53/DOMPurify) (for sanitizing HTML)
+- [freeCodeCamp Test Suite](https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js) (for project validation)
 
 ---
 
@@ -34,8 +32,8 @@ To run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/markdown-previewer.git
-   cd markdown-previewer
+   git clone https://github.com/yourusername/random-quote-machine.git
+   cd random-quote-machine
    ```
 
 2. Install the dependencies:
@@ -56,34 +54,24 @@ To run the project locally:
 
 ## User Stories (from freeCodeCamp)
 
-- I can see a `textarea` element with an `id="editor"`.
-- I can see an element with an `id="preview"`.
-- When I enter text into the `textarea`, the `#preview` element is updated as I type.
-- When I enter GitHub-flavored Markdown into the `textarea`, the text is rendered correctly into HTML.
-- I can see the Markdown syntax correctly interpreted for:
-  - Headers
-  - Paragraphs
-  - Links
-  - Inline code
-  - Code blocks
-  - Lists
-  - Blockquotes
-  - Bold and italic text
-  - Images
-- My Markdown previewer interprets carriage returns and renders them as `<br>` (line break) elements.
+- I can see a wrapper element with `id="quote-box"`.
+- Within `#quote-box`, I can see an element with `id="text"` that displays a random quote.
+- Within `#quote-box`, I can see an element with `id="author"` that displays the author of the quote.
+- I can see a clickable element with `id="new-quote"` that generates a new random quote.
+- I can see a clickable element with `id="tweet-quote"` that opens the Twitter intent page to post the quote.
+- The quote and author are updated when the "New Quote" button is clicked.
 
 ---
-
 
 ## Live Demo
 
 You can view a live version of the project here:  
-**[Live Demo Link](http://markdown-previewer-app-tau.vercel.app)**
+**[Live Demo Link]([https://your-deployment-link.netlify.app/](http://random-quote-app-fcc-certification.vercel.app))**
 
 ---
 
+
 ## Acknowledgments
 
-- Thanks to [freeCodeCamp](https://www.freecodecamp.org/) for providing the project specifications.
-- Special thanks to the creators of **Marked** and **DOMPurify** libraries.
-
+- Thanks to [freeCodeCamp](https://www.freecodecamp.org/) for providing the project guidelines.
+- Inspired by many creative Random Quote Machine examples by other developers.
