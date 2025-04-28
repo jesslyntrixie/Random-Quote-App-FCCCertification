@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Markdown Previewer
 
-In the project directory, you can run:
+This is one of the five projects required to complete the **freeCodeCamp Front End Development Libraries Certification**.
 
-### `npm start`
+The goal of this project is to build a Markdown editor and previewer that converts user-input Markdown text into rendered HTML in real-time, following the [CommonMark](https://commonmark.org/) specification with support for line breaks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Features
 
-### `npm test`
+- Live preview of Markdown text as you type.
+- Supports headers, links, code blocks, lists, bold, italic, blockquotes, images, and more.
+- Follows CommonMark and GitHub Flavored Markdown standards.
+- Responsive and user-friendly interface.
+- Built using **React** and styled with **Bootstrap** and custom CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://react.dev/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Marked](https://marked.js.org/) (for parsing Markdown)
+- [DOMPurify](https://github.com/cure53/DOMPurify) (for sanitizing HTML)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run the project locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/yourusername/markdown-previewer.git
+   cd markdown-previewer
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install the dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## User Stories (from freeCodeCamp)
 
-### Analyzing the Bundle Size
+- I can see a `textarea` element with an `id="editor"`.
+- I can see an element with an `id="preview"`.
+- When I enter text into the `textarea`, the `#preview` element is updated as I type.
+- When I enter GitHub-flavored Markdown into the `textarea`, the text is rendered correctly into HTML.
+- I can see the Markdown syntax correctly interpreted for:
+  - Headers
+  - Paragraphs
+  - Links
+  - Inline code
+  - Code blocks
+  - Lists
+  - Blockquotes
+  - Bold and italic text
+  - Images
+- My Markdown previewer interprets carriage returns and renders them as `<br>` (line break) elements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Live Demo
 
-### Advanced Configuration
+You can view a live version of the project here:  
+**[Live Demo Link](http://markdown-previewer-app-tau.vercel.app)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Thanks to [freeCodeCamp](https://www.freecodecamp.org/) for providing the project specifications.
+- Special thanks to the creators of **Marked** and **DOMPurify** libraries.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
